@@ -73,7 +73,7 @@ public class DefaultGrid implements Grid {
         }
     }
 
-    private boolean isRowComplete(int verticalPosition) {
+    boolean isRowComplete(int verticalPosition) {
         for (int horizontalPosition = 0; horizontalPosition < blocksWide; horizontalPosition++) {
             if (!cells[verticalPosition][horizontalPosition].getIsOccupied()) {
                 return false;
@@ -99,7 +99,7 @@ public class DefaultGrid implements Grid {
         }
     }
 
-    private void checkIfGridEmpty() {
+    void checkIfGridEmpty() {
         isEmpty = true;
         for (int verticalPosition = blocksHigh - 1; verticalPosition >= 0; verticalPosition--) {
             for (int horizontalPosition = 0; horizontalPosition < blocksWide; horizontalPosition++) {

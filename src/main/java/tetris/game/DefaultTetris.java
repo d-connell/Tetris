@@ -2,13 +2,13 @@ package tetris.game;
 
 import tetris.game.grid.DefaultGrid;
 import tetris.game.tetronimos.Tetronimo;
-import tetris.game.tetronimos.fourrotationstetronimo.JTetronimoTetronimo;
-import tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTetronimo;
-import tetris.game.tetronimos.fourrotationstetronimo.TTetronimoTetronimo;
+import tetris.game.tetronimos.fourrotationstetronimo.JTetronimo;
+import tetris.game.tetronimos.fourrotationstetronimo.LTetronimo;
+import tetris.game.tetronimos.fourrotationstetronimo.TTetronimo;
 import tetris.game.tetronimos.norotationstetronimo.OTetronimo;
-import tetris.game.tetronimos.tworotationstetronimo.ITetronimoTetronimo;
-import tetris.game.tetronimos.tworotationstetronimo.STetronimoTetronimo;
-import tetris.game.tetronimos.tworotationstetronimo.ZTetronimoTetronimo;
+import tetris.game.tetronimos.tworotationstetronimo.ITetronimo;
+import tetris.game.tetronimos.tworotationstetronimo.STetronimo;
+import tetris.game.tetronimos.tworotationstetronimo.ZTetronimo;
 import tetris.input.DefaultKeyboard;
 import tetris.input.Keyboard;
 import tetris.output.gamerenderer.DefaultGameRenderer;
@@ -224,17 +224,17 @@ public class DefaultTetris implements Tetris {
         int randomNumber = (int) (Math.random() * numberOfTetronimos);
         switch (randomNumber) {
             case 0:
-                return new ITetronimoTetronimo(grid, gameRenderer);
+                return new ITetronimo(grid, gameRenderer);
             case 1:
-                return new JTetronimoTetronimo(grid, gameRenderer);
+                return new JTetronimo(grid, gameRenderer);
             case 2:
-                return new LTetronimoTetronimo(grid, gameRenderer);
+                return new LTetronimo(grid, gameRenderer);
             case 3:
-                return new TTetronimoTetronimo(grid, gameRenderer);
+                return new TTetronimo(grid, gameRenderer);
             case 4:
-                return new STetronimoTetronimo(grid, gameRenderer);
+                return new STetronimo(grid, gameRenderer);
             case 5:
-                return new ZTetronimoTetronimo(grid, gameRenderer);
+                return new ZTetronimo(grid, gameRenderer);
             default:
                 return new OTetronimo(grid, gameRenderer);
         }
