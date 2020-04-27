@@ -47,9 +47,15 @@ class DefaultTetrisTest {
     }
 
     @Test
-    void shouldPassToConfirmOneLevelDoesNotIncreasePastLevel10() {
+    void shouldPassToConfirmOneLevelDoesNotIncreasePastLevelTen() {
         DefaultTetris tetris = createTetrisAndIncreaseLevel(11);
         assertEquals(10, tetris.level);
+    }
+
+    @Test
+    void shouldPassToConfirmCompletingTenRowsIncreasesLevelByOne() {
+        DefaultTetris tetris = createTetrisAndIncreaseCompletedRows(10);
+        assertEquals(1, tetris.level);
     }
 
     private DefaultTetris createTetrisAndIncreaseScore(int rowsCleared) {
@@ -72,6 +78,13 @@ class DefaultTetrisTest {
         for (int i = 1; i <= numberOfLevelIncreases; i++) {
             tetris.increaseLevel();
         }
+        return tetris;
+    }
+
+    private DefaultTetris createTetrisAndIncreaseCompletedRows(int completedRows) {
+        DefaultTetris tetris = new DefaultTetris();
+        tetris.newGame();
+        tetris.updateRowsCompleted(completedRows);
         return tetris;
     }
 

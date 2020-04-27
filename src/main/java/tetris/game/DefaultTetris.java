@@ -13,6 +13,7 @@ import tetris.input.DefaultKeyboard;
 import tetris.input.Keyboard;
 import tetris.output.gamerenderer.DefaultGameRenderer;
 import tetris.output.gamerenderer.GameRenderer;
+import tetris.validation.IntegerInputValidator;
 
 import java.awt.event.KeyEvent;
 
@@ -27,7 +28,7 @@ public class DefaultTetris implements Tetris {
     private boolean isPaused;
     private boolean isPlaying = false;
     protected int level = 0;
-    private int rowsCleared = 0;
+    private int totalCompletedRows = 0;
     protected int score = 0;
     private DefaultGrid grid;
     private boolean isGameOver = false;
@@ -101,7 +102,7 @@ public class DefaultTetris implements Tetris {
 
     @Override
     public void newGame() {
-        rowsCleared = 0;
+        totalCompletedRows = 0;
         level = 0;
         score = 0;
         gameRenderer.getListOfRenderers().clear();
@@ -188,17 +189,16 @@ public class DefaultTetris implements Tetris {
 
     @Override
     public void updateScore(int completedRows) {
-        if (completedRows <= 0) {
-            throw new IllegalArgumentException("Cannot complete a negative number of rows");
-        }
+        IntegerInputValidator.ValidateInputGreaterThanZero(completedRows);
         score += Math.pow(2, completedRows - 1) * (level + 1);
     }
 
     @Override
-    public void updateRowsCleared(int completedRows) {
+    public void updateRowsCompleted(int completedRows) {
+        IntegerInputValidator.ValidateInputGreaterThanZero(completedRows);
         int rowsToGainNextLevel = 10;
-        rowsCleared += completedRows;
-        if (rowsCleared >= ((level + 1) * rowsToGainNextLevel)) {
+        totalCompletedRows += completedRows;
+        if (totalCompletedRows >= ((level + 1) * rowsToGainNextLevel)) {
             increaseLevel();
         }
     }
@@ -216,13 +216,17 @@ public class DefaultTetris implements Tetris {
     }
 
     private void drawToDisplay() {
-        gameRenderer.updateDisplay(isPaused, rowsCleared, level, score, isGameOver);
+        gameRenderer.updateDisplay(isPaused, totalCompletedRows, level, score, isGameOver);
     }
 
     private Tetronimo createRandomTetronimo() {
         int numberOfTetronimos = 7;
         int randomNumber = (int) (Math.random() * numberOfTetronimos);
-        switch (randomNumber) {
+        return createTetronimo(randomNumber);
+    }
+
+    private Tetronimo createTetronimo(int tetronimoType) {
+        switch (tetronimoType) {
             case 0:
                 return new ITetronimo(grid, gameRenderer);
             case 1:
@@ -245,7 +249,7 @@ public class DefaultTetris implements Tetris {
             int completedRows = grid.checkForCompletedRows();
             if (completedRows > 0) {
                 updateScore(completedRows);
-                updateRowsCleared(completedRows);
+                updateRowsCompleted(completedRows);
                 if (grid.getIsEmpty()) {
                     System.out.println("empty grid");
                     updateScore(blocksWide);

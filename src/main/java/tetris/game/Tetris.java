@@ -20,7 +20,7 @@ public interface Tetris extends Game {
 
     void updateScore(int completedRows);
 
-    void updateRowsCleared(int completedRows);
+    void updateRowsCompleted(int completedRows);
 
     void increaseLevel();
 

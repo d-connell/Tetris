@@ -1,6 +1,6 @@
 package tetris.output.display;
 
-import tetris.validation.DimensionsValidator;
+import tetris.validation.IntegerInputValidator;
 import tetris.validation.ObjectValidator;
 
 import javax.swing.*;
@@ -23,7 +23,7 @@ public class Window extends Canvas implements Display {
     }
 
     private void validateInputs(int width, int height, String title, KeyListener keyListener) {
-        DimensionsValidator.ValidateDimensionsGreaterThanZero(width, height);
+        IntegerInputValidator.ValidateInputGreaterThanZero(width, height);
         ObjectValidator.ValidateObjectNotNull(title, "title");
         ObjectValidator.ValidateObjectNotNull(keyListener, "keyListener");
     }
