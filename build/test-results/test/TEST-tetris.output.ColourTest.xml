@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.output.ColourTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:38:32" hostname="MacBook" time="0.152">
+  <properties/>
+  <testcase name="shouldPassToConfirmYellowBorderValues()" classname="tetris.output.ColourTest" time="0.011"/>
+  <testcase name="shouldPassToConfirmYellowFillValues()" classname="tetris.output.ColourTest" time="0.003"/>
+  <testcase name="shouldPassToConfirmRedFillValues()" classname="tetris.output.ColourTest" time="0.002"/>
+  <testcase name="shouldPassToConfirmAquaFillValues()" classname="tetris.output.ColourTest" time="0.003"/>
+  <testcase name="shouldPassToConfirmBlueBorderValues()" classname="tetris.output.ColourTest" time="0.001"/>
+  <testcase name="shouldPassToConfirmGreyBorderValues()" classname="tetris.output.ColourTest" time="0.002"/>
+  <testcase name="shouldPassToConfirmPurpleFillValues()" classname="tetris.output.ColourTest" time="0.008"/>
+  <testcase name="shouldPassToConfirmRedBorderValues()" classname="tetris.output.ColourTest" time="0.003"/>
+  <testcase name="shouldPassToConfirmGreenBorderValues()" classname="tetris.output.ColourTest" time="0.003"/>
+  <testcase name="shouldPassToConfirmOrangeFillValues()" classname="tetris.output.ColourTest" time="0.002"/>
+  <testcase name="shouldPassToConfirmAquaBorderValues()" classname="tetris.output.ColourTest" time="0.003"/>
+  <testcase name="shouldPassToConfirmPurpleBorderValues()" classname="tetris.output.ColourTest" time="0.004"/>
+  <testcase name="shouldPassToConfirmOrangeBorderValues()" classname="tetris.output.ColourTest" time="0.001"/>
+  <testcase name="shouldPassToConfirmBlueFillValues()" classname="tetris.output.ColourTest" time="0.002"/>
+  <testcase name="shouldPassToConfirmGreenFillValues()" classname="tetris.output.ColourTest" time="0.003"/>
+  <testcase name="shouldPassToConfirmGreyFillValues()" classname="tetris.output.ColourTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

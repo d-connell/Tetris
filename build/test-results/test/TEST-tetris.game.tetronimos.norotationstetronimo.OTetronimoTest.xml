@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.game.tetronimos.norotationstetronimo.OTetronimoTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:38:33" hostname="MacBook" time="0.122">
+  <properties/>
+  <testcase name="shouldPassToConfirmBlockPositionsDoNotChangeWhenClockwiseRotationInvoked()" classname="tetris.game.tetronimos.norotationstetronimo.OTetronimoTest" time="0.077"/>
+  <testcase name="shouldPassToConfirmCreatedCorrectly()" classname="tetris.game.tetronimos.norotationstetronimo.OTetronimoTest" time="0.024"/>
+  <testcase name="shouldPassToConfirmBlockPositionsDoNotChangeWhenAntiClockwiseRotationInvoked()" classname="tetris.game.tetronimos.norotationstetronimo.OTetronimoTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

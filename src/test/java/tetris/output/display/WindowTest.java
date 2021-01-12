@@ -1,11 +1,11 @@
 package tetris.output.display;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import tetris.game.DefaultTetris;
+import org.junit.jupiter.api.Test;
 import tetris.input.DefaultKeyboard;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
 
 
 class WindowTest {
@@ -28,7 +28,8 @@ class WindowTest {
     }
 
     private Window makeWindow(int width, int height) {
-        return new Window(width, height, "test", new DefaultKeyboard(new DefaultTetris()));
+        DefaultKeyboard mockKeyboard = mock(DefaultKeyboard.class);
+        return new Window(width, height, "test", mockKeyboard);
     }
 
     private void attemptToMakeWindowWithZeroDimensions() {

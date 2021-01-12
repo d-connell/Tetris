@@ -1,21 +1,21 @@
 package tetris.validation;
 
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import tetris.game.tetronimos.block.Block;
+import tetris.game.tetronimos.block.DefaultBlock;
+import tetris.output.Colour;
+import tetris.output.gamerenderer.GameRenderer;
+
 import java.util.ArrayList;
 import java.util.Collection;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions;
-
-import tetris.game.DefaultTetris;
-import tetris.output.gamerenderer.GameRenderer;
-import tetris.game.tetronimos.block.Block;
-import tetris.game.tetronimos.block.DefaultBlock;
-import tetris.input.DefaultKeyboard;
-import tetris.output.Colour;
-import tetris.output.gamerenderer.DefaultGameRenderer;
+import static org.mockito.Mockito.mock;
 
 class BlockPositionValidatorTest {
+
+    GameRenderer mockGameRenderer = mock(GameRenderer.class);
 
     @Test
     void shouldPassToConfirmTwoSeparateBlocksAreValid() {
@@ -49,11 +49,10 @@ class BlockPositionValidatorTest {
 
     private Collection<Block> makeTwoBlocks(int firstHorizontalPosition, int firstVerticalPosition,
                                             int secondHorizontalPosition, int secondVerticalPosition) {
-        GameRenderer gameRenderer = new DefaultGameRenderer(7, 6, "test", new DefaultKeyboard(new DefaultTetris()));
         Collection<Block> blocks = new ArrayList<>();
-        Block firstBlock = new DefaultBlock(gameRenderer, Colour.AQUA, firstHorizontalPosition,firstVerticalPosition);
+        Block firstBlock = new DefaultBlock(mockGameRenderer, Colour.AQUA, firstHorizontalPosition,firstVerticalPosition);
         blocks.add(firstBlock);
-        Block secondBlock = new DefaultBlock(gameRenderer, Colour.AQUA, secondHorizontalPosition,secondVerticalPosition);
+        Block secondBlock = new DefaultBlock(mockGameRenderer, Colour.AQUA, secondHorizontalPosition,secondVerticalPosition);
         blocks.add(secondBlock);
         return blocks;
     }

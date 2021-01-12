@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.game.grid.DefaultGridTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:38:36" hostname="MacBook" time="0.15">
+  <properties/>
+  <testcase name="shouldPassWhenReplacingTopRowWithNewCells()" classname="tetris.game.grid.DefaultGridTest" time="0.011"/>
+  <testcase name="shouldPassWhenCopyingHigherRowsFromBottomRowWithBottomRowComplete()" classname="tetris.game.grid.DefaultGridTest" time="0.011"/>
+  <testcase name="shouldPassToConfirmGridWithSingleOccupiedCellNotEmpty()" classname="tetris.game.grid.DefaultGridTest" time="0.003"/>
+  <testcase name="shouldPassWhenCheckingWhetherIndividualRowsAreComplete()" classname="tetris.game.grid.DefaultGridTest" time="0.018"/>
+  <testcase name="shouldPassCheckingCellsWhichDoNotReceiveABlockHaveNullColour()" classname="tetris.game.grid.DefaultGridTest" time="0.004"/>
+  <testcase name="shouldPassToConfirmEmptyGridIsEmpty()" classname="tetris.game.grid.DefaultGridTest" time="0.002"/>
+  <testcase name="shouldPassWhenCheckingCellWhichReceivedGreenBlockIsNowGreen()" classname="tetris.game.grid.DefaultGridTest" time="0.002"/>
+  <testcase name="shouldPassWhenCopyingHigherRowsFromMiddleRowWithBottomRowComplete()" classname="tetris.game.grid.DefaultGridTest" time="0.011"/>
+  <testcase name="shouldPassWhenDeletingTheOnlyCompletedRow()" classname="tetris.game.grid.DefaultGridTest" time="0.008"/>
+  <testcase name="shouldPassWhenGridHasOneCompleteRow()" classname="tetris.game.grid.DefaultGridTest" time="0.013"/>
+  <testcase name="shouldThrowErrorWhenTryingToDeleteARowOutsideTheGrid()" classname="tetris.game.grid.DefaultGridTest" time="0.01"/>
+  <testcase name="shouldThrowErrorWhenTryingToCheckARowOutsideTheGridIsComplete()" classname="tetris.game.grid.DefaultGridTest" time="0.008"/>
+  <testcase name="shouldThrowErrorWhenTryingToCopyFromARowThatDoesntExist()" classname="tetris.game.grid.DefaultGridTest" time="0.01"/>
+  <testcase name="shouldPassToConfirmPopulatedGridNotEmpty()" classname="tetris.game.grid.DefaultGridTest" time="0.018"/>
+  <testcase name="shouldPassWhenCheckingCellWhichReceivedGreenBlockIsNowBlue()" classname="tetris.game.grid.DefaultGridTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

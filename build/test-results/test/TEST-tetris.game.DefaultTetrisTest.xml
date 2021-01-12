@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tetris.game.DefaultTetrisTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:38:34" hostname="MacBook" time="1.774">
+  <properties/>
+  <testcase name="shouldPassToConfirmOneLevelIncreaseResultsInLevelOne()" classname="tetris.game.DefaultTetrisTest" time="0.234"/>
+  <testcase name="shouldPassToConfirmScoreIncreasesCorrectlyWithFourRowsCompleteAtLevelZero()" classname="tetris.game.DefaultTetrisTest" time="0.213"/>
+  <testcase name="shouldPassToConfirmScoreIncreasesCorrectlyWithOneRowCompleteAtLevelZero()" classname="tetris.game.DefaultTetrisTest" time="0.169"/>
+  <testcase name="shouldPassToConfirmOneLevelDoesNotIncreasePastLevelTen()" classname="tetris.game.DefaultTetrisTest" time="0.195"/>
+  <testcase name="shouldPassToConfirmScoreIncreasesCorrectlyWithThreeRowsCompleteAtLevelZero()" classname="tetris.game.DefaultTetrisTest" time="0.182"/>
+  <testcase name="shouldPassToConfirmCompletingTenRowsIncreasesLevelByOne()" classname="tetris.game.DefaultTetrisTest" time="0.191"/>
+  <testcase name="shouldThrowIllegalArgumentExceptionIfIncreasingScoreWithNegativeNumberOfRowsCleared()" classname="tetris.game.DefaultTetrisTest" time="0.183"/>
+  <testcase name="shouldThrowIllegalArgumentExceptionIfIncreasingScoreWithZeroRowsCleared()" classname="tetris.game.DefaultTetrisTest" time="0.191"/>
+  <testcase name="shouldPassToConfirmScoreIncreasesCorrectlyWithTwoRowsCompleteAtLevelZero()" classname="tetris.game.DefaultTetrisTest" time="0.195"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
