@@ -1,17 +1,16 @@
 package tetris.game.tetronimos.block;
 
 import org.junit.jupiter.api.Test;
-
-import tetris.game.DefaultTetris;
-import tetris.input.DefaultKeyboard;
 import tetris.output.Colour;
-import tetris.output.gamerenderer.DefaultGameRenderer;
 import tetris.output.gamerenderer.GameRenderer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.Mockito.mock;
 
 class DefaultBlockTest {
+
+    GameRenderer mockGameRenderer = mock(GameRenderer.class);
 
     @Test
     void shouldPassToConfirmBlockCreatedWithSpecifiedParameters() {
@@ -55,8 +54,7 @@ class DefaultBlockTest {
     }
 
     private Block createGreenBlock() {
-        GameRenderer gameRenderer = new DefaultGameRenderer(5, 5, "test", new DefaultKeyboard(new DefaultTetris()));
-        return new DefaultBlock(gameRenderer, Colour.GREEN,2,3);
+        return new DefaultBlock(mockGameRenderer, Colour.GREEN,2,3);
     }
 
 }

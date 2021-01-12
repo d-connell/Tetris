@@ -1,9 +1,9 @@
 package tetris.game.grid.cell;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
 import tetris.output.Colour;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class DefaultCellTest {
 

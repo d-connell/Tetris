@@ -1,21 +1,20 @@
 package tetris.game.grid;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-
-import tetris.game.DefaultTetris;
+import org.junit.jupiter.api.Test;
 import tetris.game.tetronimos.block.Block;
 import tetris.game.tetronimos.block.DefaultBlock;
-import tetris.input.DefaultKeyboard;
 import tetris.output.Colour;
-import tetris.output.gamerenderer.DefaultGameRenderer;
 import tetris.output.gamerenderer.GameRenderer;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mock;
 
 class DefaultGridTest {
 
-    // tests for cells changing colour when blocks fixed in grid
+    GameRenderer mockGameRenderer = mock(GameRenderer.class);
+
+    // Tests for cells changing colour when blocks fixed in grid
 
     @Test
     void shouldPassWhenCheckingCellWhichReceivedGreenBlockIsNowGreen() {
@@ -37,7 +36,7 @@ class DefaultGridTest {
         assertNotEquals(Colour.BLUE, grid.getCells()[0][0].getColour());
     }
 
-    // tests for identifying completed rows
+    // Tests for identifying completed rows
 
     @Test
     void shouldPassWhenGridHasOneCompleteRow() {
@@ -58,7 +57,7 @@ class DefaultGridTest {
         Assertions.assertThrows(ArrayIndexOutOfBoundsException.class, this::attemptToCheckCompletenessForARowThatDoesntExist);
     }
 
-    // tests for deleting rows
+    // Tests for deleting rows
 
     @Test
     void shouldPassWhenDeletingTheOnlyCompletedRow() {
@@ -74,7 +73,7 @@ class DefaultGridTest {
         Assertions.assertThrows(ArrayIndexOutOfBoundsException.class, ()->grid.deleteRow(3));
     }
 
-    // tests for moving higher rows down
+    // Tests for moving higher rows down
 
     @Test
     void shouldPassWhenCopyingHigherRowsFromBottomRowWithBottomRowComplete() {
@@ -97,7 +96,7 @@ class DefaultGridTest {
         Assertions.assertThrows(ArrayIndexOutOfBoundsException.class, this::attemptToCopyFromARowThatDoesNotExist);
     }
 
-    // tests for making a new top row
+    // Tests for making a new top row
 
     @Test
     void shouldPassWhenReplacingTopRowWithNewCells() {
@@ -107,7 +106,7 @@ class DefaultGridTest {
         assertFalse(grid.isRowComplete(0));
     }
 
-    // tests for checking if the grid is empty
+    // Tests for checking if the grid is empty
 
     @Test
     void shouldPassToConfirmEmptyGridIsEmpty() {
@@ -130,42 +129,38 @@ class DefaultGridTest {
         assertFalse(grid.getIsEmpty());
     }
 
-    // methods to support tests
+    // Methods to support tests
 
     private DefaultGrid createTwoByTwoGridWithSingleGreenCellInTopLeft() {
-        GameRenderer gameRenderer = new DefaultGameRenderer(2, 2, "test", new DefaultKeyboard(new DefaultTetris()));
-        DefaultGrid grid = new DefaultGrid(gameRenderer,2,2);
-        Block block = new DefaultBlock(gameRenderer, Colour.GREEN,0,0);
+        DefaultGrid grid = new DefaultGrid(mockGameRenderer,2,2);
+        Block block = new DefaultBlock(mockGameRenderer, Colour.GREEN,0,0);
         grid.fixBlock(block);
         return grid;
     }
 
     private DefaultGrid createThreeByTenGridWithOneEmptyRowOneCompleteRowAndOnePartiallyCompleteRow() {
-        // top row empty, middle row has one occupied cell, bottom row complete
-        GameRenderer gameRenderer = new DefaultGameRenderer(10, 3, "test", new DefaultKeyboard(new DefaultTetris()));
-        DefaultGrid grid = new DefaultGrid(gameRenderer,10,3);
-        Block block = new DefaultBlock(gameRenderer, Colour.GREEN,1,1);
+        // The top row is empty, the middle row has one occupied cell, the bottom row is complete
+        DefaultGrid grid = new DefaultGrid(mockGameRenderer,10,3);
+        Block block = new DefaultBlock(mockGameRenderer, Colour.GREEN,1,1);
         grid.fixBlock(block);
         for (int i = 0; i < 10; i++) {
-            block = new DefaultBlock(gameRenderer, Colour.GREEN,i,2);
+            block = new DefaultBlock(mockGameRenderer, Colour.GREEN,i,2);
             grid.fixBlock(block);
         }
         return grid;
     }
 
     private DefaultGrid createTwoByFiveGridWithCompleteTopRow() {
-        GameRenderer gameRenderer = new DefaultGameRenderer(10, 3, "test", new DefaultKeyboard(new DefaultTetris()));
-        DefaultGrid grid = new DefaultGrid(gameRenderer,10,3);
+        DefaultGrid grid = new DefaultGrid(mockGameRenderer,10,3);
         for (int i = 0; i < 10; i++) {
-            Block block = new DefaultBlock(gameRenderer, Colour.GREEN,i,0);
+            Block block = new DefaultBlock(mockGameRenderer, Colour.GREEN,i,0);
             grid.fixBlock(block);
         }
         return grid;
     }
 
     private DefaultGrid createEmptyFiveByFiveGrid() {
-        GameRenderer gameRenderer = new DefaultGameRenderer(5, 5, "test", new DefaultKeyboard(new DefaultTetris()));
-        return new DefaultGrid(gameRenderer,5,5);
+        return new DefaultGrid(mockGameRenderer,5,5);
     }
 
     private void attemptToCheckCompletenessForARowThatDoesntExist() {

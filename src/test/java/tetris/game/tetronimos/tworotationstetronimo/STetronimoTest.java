@@ -1,18 +1,18 @@
 package tetris.game.tetronimos.tworotationstetronimo;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import tetris.game.DefaultTetris;
+import org.junit.jupiter.api.Test;
 import tetris.game.grid.DefaultGrid;
 import tetris.game.tetronimos.Rotation;
-import tetris.input.DefaultKeyboard;
 import tetris.output.Colour;
-import tetris.output.gamerenderer.DefaultGameRenderer;
 import tetris.output.gamerenderer.GameRenderer;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+
 class STetronimoTest {
+
+    GameRenderer mockGameRenderer = mock(GameRenderer.class);
 
     @Test
     void shouldPassToConfirmCreatedCorrectly() {
@@ -173,8 +173,7 @@ class STetronimoTest {
     }
 
     private STetronimo createSTetronimo() {
-        GameRenderer gameRenderer = new DefaultGameRenderer(6, 6, "test", new DefaultKeyboard(new DefaultTetris()));
-        return new STetronimo(new DefaultGrid(gameRenderer,6,6), gameRenderer);
+        return new STetronimo(new DefaultGrid(mockGameRenderer,6,6), mockGameRenderer);
     }
 
 }

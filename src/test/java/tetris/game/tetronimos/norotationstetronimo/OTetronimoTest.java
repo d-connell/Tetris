@@ -1,16 +1,16 @@
 package tetris.game.tetronimos.norotationstetronimo;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import tetris.game.DefaultTetris;
 import tetris.game.grid.DefaultGrid;
-import tetris.input.DefaultKeyboard;
 import tetris.output.Colour;
-import tetris.output.gamerenderer.DefaultGameRenderer;
 import tetris.output.gamerenderer.GameRenderer;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+
 class OTetronimoTest {
+
+    GameRenderer mockGameRenderer = mock(GameRenderer.class);
 
     @Test
     void shouldPassToConfirmCreatedCorrectly() {
@@ -60,8 +60,7 @@ class OTetronimoTest {
     }
 
     private OTetronimo createOTetronimo() {
-        GameRenderer gameRenderer = new DefaultGameRenderer(6, 6, "test", new DefaultKeyboard(new DefaultTetris()));
-        return new OTetronimo(new DefaultGrid(gameRenderer,6,6), gameRenderer);
+        return new OTetronimo(new DefaultGrid(mockGameRenderer,6,6), mockGameRenderer);
     }
 
 }

@@ -1,17 +1,17 @@
 package tetris.game.tetronimos.fourrotationstetronimo;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import tetris.game.DefaultTetris;
 import tetris.game.grid.DefaultGrid;
 import tetris.game.tetronimos.Rotation;
-import tetris.input.DefaultKeyboard;
 import tetris.output.Colour;
-import tetris.output.gamerenderer.DefaultGameRenderer;
 import tetris.output.gamerenderer.GameRenderer;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+
 class LTetronimoTest {
+
+    GameRenderer mockGameRenderer = mock(GameRenderer.class);
 
     @Test
     void shouldPassToConfirmCreatedCorrectly() {
@@ -31,7 +31,7 @@ class LTetronimoTest {
         assertEquals(1, tetronimo.fourthBlock.getYPosition());
     }
 
-    // rotations in middle of grid
+    // Rotations in middle of grid
 
     @Test
     void shouldPassToConfirmRotatesClockwiseCorrectlyFromFirstRotationInMiddleOfGrid() {
@@ -173,7 +173,7 @@ class LTetronimoTest {
         assertEquals(2, tetronimo.fourthBlock.getYPosition());
     }
 
-    // rotations at top of grid
+    // Rotations at top of grid
 
     @Test
     void shouldPassToConfirmCannotRotateClockwiseFromFirstRotationAtTopOfGrid() {
@@ -205,7 +205,7 @@ class LTetronimoTest {
         assertEquals(1, tetronimo.fourthBlock.getYPosition());
     }
 
-    // rotations at left of grid
+    // Rotations at left of grid
 
     @Test
     void shouldPassToConfirmRotatesClockwiseCorrectlyFromFirstRotationAtLeftOfGrid() {
@@ -353,7 +353,7 @@ class LTetronimoTest {
         assertEquals(3, tetronimo.fourthBlock.getYPosition());
     }
 
-    // rotations at right of grid
+    // Rotations at right of grid
 
     @Test
     void shouldPassToConfirmRotatesClockwiseCorrectlyFromFirstRotationAtRightOfGrid() {
@@ -501,7 +501,7 @@ class LTetronimoTest {
         assertEquals(1, tetronimo.fourthBlock.getYPosition());
     }
 
-    // rotations at bottom of grid
+    // Rotations at bottom of grid
 
     @Test
     void shouldPassToConfirmRotatesClockwiseCorrectlyFromFirstRotationAtBottomOfGrid() {
@@ -650,8 +650,7 @@ class LTetronimoTest {
     }
 
     private LTetronimo createLTetronimo() {
-        GameRenderer gameRenderer = new DefaultGameRenderer(7, 6, "test", new DefaultKeyboard(new DefaultTetris()));
-        return new LTetronimo(new DefaultGrid(gameRenderer, 7, 6), gameRenderer);
+        return new LTetronimo(new DefaultGrid(mockGameRenderer, 7, 6), mockGameRenderer);
     }
 
 }
