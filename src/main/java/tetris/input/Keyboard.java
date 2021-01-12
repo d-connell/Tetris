@@ -11,13 +11,13 @@ public interface Keyboard extends KeyListener {
 
     @Override
     default void keyPressed(KeyEvent e) {
-        keyPress(e.getKeyCode());
+        processKeyPress(e.getKeyCode());
     }
 
     @Override
     default void keyReleased(KeyEvent e) {
     }
 
-    void keyPress(int keyCode);
+    void processKeyPress(int keyCode);
 
 }

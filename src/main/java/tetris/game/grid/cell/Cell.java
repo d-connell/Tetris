@@ -6,7 +6,7 @@ public interface Cell {
 
     void fixBlock(Colour colour);
 
-    boolean getIsOccupied();
+    boolean isOccupied();
 
     Colour getColour();
 

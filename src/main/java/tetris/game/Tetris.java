@@ -24,6 +24,6 @@ public interface Tetris extends Game {
 
     void increaseLevel();
 
-    void gameOver();
+    void setGameOver();
 
 }

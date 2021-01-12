@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:38:33" hostname="MacBook" time="0.193">
+<testsuite name="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:46:16" hostname="MacBook" time="0.112">
   <properties/>
-  <testcase name="shouldPassToConfirmCanRotateFromFirstRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.025"/>
-  <testcase name="shouldPassToConfirmCannotRotateFromSecondRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.023"/>
-  <testcase name="shouldPassToConfirmRotatesCorrectlyFromSecondRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.01"/>
-  <testcase name="shouldPassToConfirmRotatesCorrectlyFromFirstRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.027"/>
-  <testcase name="shouldPassToConfirmCanRotateFromFirstRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.018"/>
-  <testcase name="shouldPassToConfirmCannotRotateFromFirstRotationAtTopOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.01"/>
-  <testcase name="shouldPassToConfirmCanRotateFromFirstPositionAtRightOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.009"/>
-  <testcase name="shouldPassToConfirmCreatedCorrectly()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.014"/>
-  <testcase name="shouldPassToConfirmCanRotateFromSecondPositionAtRightOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.016"/>
-  <testcase name="shouldPassToConfirmCanRotateFromSecondPositionAtBottomOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.012"/>
+  <testcase name="shouldPassToConfirmCanRotateFromFirstRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.014"/>
+  <testcase name="shouldPassToConfirmCannotRotateFromSecondRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.005"/>
+  <testcase name="shouldPassToConfirmRotatesCorrectlyFromSecondRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.007"/>
+  <testcase name="shouldPassToConfirmRotatesCorrectlyFromFirstRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.006"/>
+  <testcase name="shouldPassToConfirmCanRotateFromFirstRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.012"/>
+  <testcase name="shouldPassToConfirmCannotRotateFromFirstRotationAtTopOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.007"/>
+  <testcase name="shouldPassToConfirmCanRotateFromFirstPositionAtRightOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.005"/>
+  <testcase name="shouldPassToConfirmCreatedCorrectly()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.008"/>
+  <testcase name="shouldPassToConfirmCanRotateFromSecondPositionAtRightOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.006"/>
+  <testcase name="shouldPassToConfirmCanRotateFromSecondPositionAtBottomOfGrid()" classname="tetris.game.tetronimos.tworotationstetronimo.STetronimoTest" time="0.024"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

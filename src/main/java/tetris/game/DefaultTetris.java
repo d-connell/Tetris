@@ -183,7 +183,7 @@ public class DefaultTetris implements Tetris {
             this.currentTetronimo.moveToGrid();
             this.nextTetronimo = createRandomTetronimo();
         } else {
-            gameOver();
+            setGameOver();
         }
     }
 
@@ -210,7 +210,7 @@ public class DefaultTetris implements Tetris {
     }
 
     @Override
-    public void gameOver() {
+    public void setGameOver() {
         this.isGameOver = true;
         isPlaying = false;
     }
@@ -250,7 +250,7 @@ public class DefaultTetris implements Tetris {
             if (completedRows > 0) {
                 updateScore(completedRows);
                 updateRowsCompleted(completedRows);
-                if (grid.getIsEmpty()) {
+                if (grid.isEmpty()) {
                     System.out.println("empty grid");
                     updateScore(blocksWide);
                 }

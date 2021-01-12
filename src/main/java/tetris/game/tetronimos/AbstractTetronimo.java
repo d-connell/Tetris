@@ -96,7 +96,7 @@ public abstract class AbstractTetronimo implements Tetronimo {
                 || block.getXPosition() + xMove >= blocksWide
                 || block.getYPosition() + yMove < 0
                 || block.getYPosition() + yMove >= blocksHigh
-                || grid.getCells()[block.getYPosition() + yMove][block.getXPosition() + xMove].getIsOccupied()) {
+                || grid.getCells()[block.getYPosition() + yMove][block.getXPosition() + xMove].isOccupied()) {
             canMove = false;
         }
     }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris.output.display.WindowTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:38:31" hostname="MacBook" time="1.77">
+<testsuite name="tetris.output.display.WindowTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:46:13" hostname="MacBook" time="2.486">
   <properties/>
-  <testcase name="shouldThrowErrorWhenWindowInstantiatedWithZeroDimensions()" classname="tetris.output.display.WindowTest" time="0.77"/>
-  <testcase name="shouldThrowErrorWhenWindowInstantiatedWithNegativeDimensions()" classname="tetris.output.display.WindowTest" time="0.005"/>
-  <testcase name="shouldPassWhenWindowInstantiatedWithSpecifiedDimensions()" classname="tetris.output.display.WindowTest" time="0.99"/>
+  <testcase name="shouldThrowErrorWhenWindowInstantiatedWithZeroDimensions()" classname="tetris.output.display.WindowTest" time="1.094"/>
+  <testcase name="shouldThrowErrorWhenWindowInstantiatedWithNegativeDimensions()" classname="tetris.output.display.WindowTest" time="0.003"/>
+  <testcase name="shouldPassWhenWindowInstantiatedWithSpecifiedDimensions()" classname="tetris.output.display.WindowTest" time="1.386"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

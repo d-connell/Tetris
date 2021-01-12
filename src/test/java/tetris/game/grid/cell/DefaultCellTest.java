@@ -34,13 +34,13 @@ class DefaultCellTest {
     @Test
     void shouldPassWhenCheckingColouredCellIsOccupied() {
         Cell testCell = createGreenDefaultCell();
-        assertTrue(testCell.getIsOccupied());
+        assertTrue(testCell.isOccupied());
     }
 
     @Test
     void shouldPassWhenCheckingEmptyCellIsNotOccupied() {
         Cell testCell = createEmptyDefaultCell();
-        assertFalse(testCell.getIsOccupied());
+        assertFalse(testCell.isOccupied());
     }
 
     private Cell createGreenDefaultCell() {

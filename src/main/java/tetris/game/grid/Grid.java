@@ -15,6 +15,6 @@ public interface Grid {
 
     int getBlocksHigh();
 
-    boolean getIsEmpty();
+    boolean isEmpty();
 
 }

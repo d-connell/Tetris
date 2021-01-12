@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris.game.tetronimos.block.DefaultBlockTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:38:34" hostname="MacBook" time="0.033">
+<testsuite name="tetris.game.tetronimos.block.DefaultBlockTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:46:18" hostname="MacBook" time="0.015">
   <properties/>
-  <testcase name="shouldPassToConfirmBlockMovesWithSpecifiedLargeNegativeDistanceAndDirection()" classname="tetris.game.tetronimos.block.DefaultBlockTest" time="0.004"/>
-  <testcase name="shouldPassToConfirmBlockMovesWithSpecifiedPositiveDistanceAndDirection()" classname="tetris.game.tetronimos.block.DefaultBlockTest" time="0.003"/>
-  <testcase name="shouldPassToConfirmBlockMovesWithZeroDistanceAndDirection()" classname="tetris.game.tetronimos.block.DefaultBlockTest" time="0.005"/>
-  <testcase name="shouldPassToConfirmBlockCreatedWithSpecifiedParameters()" classname="tetris.game.tetronimos.block.DefaultBlockTest" time="0.009"/>
+  <testcase name="shouldPassToConfirmBlockMovesWithSpecifiedLargeNegativeDistanceAndDirection()" classname="tetris.game.tetronimos.block.DefaultBlockTest" time="0.002"/>
+  <testcase name="shouldPassToConfirmBlockMovesWithSpecifiedPositiveDistanceAndDirection()" classname="tetris.game.tetronimos.block.DefaultBlockTest" time="0.002"/>
+  <testcase name="shouldPassToConfirmBlockMovesWithZeroDistanceAndDirection()" classname="tetris.game.tetronimos.block.DefaultBlockTest" time="0.002"/>
+  <testcase name="shouldPassToConfirmBlockCreatedWithSpecifiedParameters()" classname="tetris.game.tetronimos.block.DefaultBlockTest" time="0.002"/>
   <testcase name="shouldPassToConfirmBlockMovesWithSpecifiedNegativeDistanceAndDirection()" classname="tetris.game.tetronimos.block.DefaultBlockTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

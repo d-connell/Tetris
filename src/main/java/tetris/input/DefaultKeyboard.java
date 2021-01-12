@@ -13,7 +13,7 @@ public class DefaultKeyboard implements Keyboard {
     }
 
     @Override
-    public void keyPress(int keyCode) {
+    public void processKeyPress(int keyCode) {
         game.processKeyCode(keyCode);
     }
 

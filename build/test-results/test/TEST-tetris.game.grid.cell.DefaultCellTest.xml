@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris.game.grid.cell.DefaultCellTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:38:36" hostname="MacBook" time="0.016">
+<testsuite name="tetris.game.grid.cell.DefaultCellTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:46:20" hostname="MacBook" time="0.022">
   <properties/>
-  <testcase name="shouldPassWhenCheckingEmptyCellHasNullColour()" classname="tetris.game.grid.cell.DefaultCellTest" time="0.003"/>
-  <testcase name="shouldPassWhenCheckingColouredCellIsOccupied()" classname="tetris.game.grid.cell.DefaultCellTest" time="0.001"/>
+  <testcase name="shouldPassWhenCheckingEmptyCellHasNullColour()" classname="tetris.game.grid.cell.DefaultCellTest" time="0.006"/>
+  <testcase name="shouldPassWhenCheckingColouredCellIsOccupied()" classname="tetris.game.grid.cell.DefaultCellTest" time="0.002"/>
   <testcase name="shouldPassWhenCheckingGreenCellIsGreen()" classname="tetris.game.grid.cell.DefaultCellTest" time="0.001"/>
-  <testcase name="shouldPassWhenCheckingEmptyCellHasSomeColour()" classname="tetris.game.grid.cell.DefaultCellTest" time="0.003"/>
-  <testcase name="shouldPassWhenCheckingEmptyCellIsNotOccupied()" classname="tetris.game.grid.cell.DefaultCellTest" time="0.001"/>
+  <testcase name="shouldPassWhenCheckingEmptyCellHasSomeColour()" classname="tetris.game.grid.cell.DefaultCellTest" time="0.002"/>
+  <testcase name="shouldPassWhenCheckingEmptyCellIsNotOccupied()" classname="tetris.game.grid.cell.DefaultCellTest" time="0.004"/>
   <testcase name="shouldPassWhenCheckingGreenCellIsBlue()" classname="tetris.game.grid.cell.DefaultCellTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

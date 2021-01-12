@@ -70,7 +70,7 @@ public class DefaultGridRenderer implements ItemRenderer {
         ObjectValidator.ValidateObjectNotNull(graphics, "graphics");
         for (int verticalPosition = 0; verticalPosition < gridBlocksHigh; verticalPosition++) {
             for (int horizontalPosition = 0; horizontalPosition < gridBlocksWide; horizontalPosition++) {
-                if (grid.getCells()[verticalPosition][horizontalPosition].getIsOccupied()) {
+                if (grid.getCells()[verticalPosition][horizontalPosition].isOccupied()) {
                     drawCell(horizontalPosition, verticalPosition, graphics,
                             grid.getCells()[verticalPosition][horizontalPosition].getColour());
                 }

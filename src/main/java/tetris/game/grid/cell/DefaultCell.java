@@ -20,7 +20,7 @@ public class DefaultCell implements Cell {
     }
 
     @Override
-    public boolean getIsOccupied() {
+    public boolean isOccupied() {
         return isOccupied;
     }
 

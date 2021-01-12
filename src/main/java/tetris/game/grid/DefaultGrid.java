@@ -60,7 +60,7 @@ public class DefaultGrid implements Grid {
     }
 
     @Override
-    public boolean getIsEmpty() {
+    public boolean isEmpty() {
         return isEmpty;
     }
 
@@ -75,7 +75,7 @@ public class DefaultGrid implements Grid {
 
     boolean isRowComplete(int verticalPosition) {
         for (int horizontalPosition = 0; horizontalPosition < blocksWide; horizontalPosition++) {
-            if (!cells[verticalPosition][horizontalPosition].getIsOccupied()) {
+            if (!cells[verticalPosition][horizontalPosition].isOccupied()) {
                 return false;
             }
         }
@@ -103,7 +103,7 @@ public class DefaultGrid implements Grid {
         isEmpty = true;
         for (int verticalPosition = blocksHigh - 1; verticalPosition >= 0; verticalPosition--) {
             for (int horizontalPosition = 0; horizontalPosition < blocksWide; horizontalPosition++) {
-                if (cells[verticalPosition][horizontalPosition].getIsOccupied()) {
+                if (cells[verticalPosition][horizontalPosition].isOccupied()) {
                     isEmpty = false;
                     return;
                 }

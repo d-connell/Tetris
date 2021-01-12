@@ -112,21 +112,21 @@ class DefaultGridTest {
     void shouldPassToConfirmEmptyGridIsEmpty() {
         DefaultGrid grid = createEmptyFiveByFiveGrid();
         grid.checkIfGridEmpty();
-        assertTrue(grid.getIsEmpty());
+        assertTrue(grid.isEmpty());
     }
 
     @Test
     void shouldPassToConfirmPopulatedGridNotEmpty() {
         DefaultGrid grid = createThreeByTenGridWithOneEmptyRowOneCompleteRowAndOnePartiallyCompleteRow();
         grid.checkIfGridEmpty();
-        assertFalse(grid.getIsEmpty());
+        assertFalse(grid.isEmpty());
     }
 
     @Test
     void shouldPassToConfirmGridWithSingleOccupiedCellNotEmpty() {
         DefaultGrid grid = createTwoByTwoGridWithSingleGreenCellInTopLeft();
         grid.checkIfGridEmpty();
-        assertFalse(grid.getIsEmpty());
+        assertFalse(grid.isEmpty());
     }
 
     // Methods to support tests

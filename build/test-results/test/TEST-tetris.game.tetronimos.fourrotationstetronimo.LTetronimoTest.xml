@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" tests="35" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:38:34" hostname="MacBook" time="0.398">
+<testsuite name="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" tests="35" skipped="0" failures="0" errors="0" timestamp="2021-01-12T04:46:17" hostname="MacBook" time="0.504">
   <properties/>
-  <testcase name="shouldPassToConfirmCannotRotateClockwiseFromSecondRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.022"/>
-  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromSecondRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.007"/>
-  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFourthRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.009"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFourthRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.006"/>
-  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFourthRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.011"/>
+  <testcase name="shouldPassToConfirmCannotRotateClockwiseFromSecondRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.009"/>
+  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromSecondRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.02"/>
+  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFourthRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.012"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFourthRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.043"/>
+  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFourthRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.009"/>
   <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFirstRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.006"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFourthRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.004"/>
-  <testcase name="shouldPassToConfirmCannotRotateClockwiseFromThirdRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.004"/>
-  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromSecondRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.005"/>
-  <testcase name="shouldPassToConfirmCannotRotateClockwiseFromFirstRotationAtTopOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.005"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromSecondRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.013"/>
-  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromSecondRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.008"/>
-  <testcase name="shouldPassToConfirmCannotRotateAntiClockwiseFromSecondRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.006"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFirstRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.004"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromSecondRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.004"/>
-  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromThirdRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.005"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromThirdRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.007"/>
-  <testcase name="shouldPassToConfirmCannotRotateAntiClockwiseFromFourthRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.009"/>
-  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromThirdRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.009"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFourthRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.007"/>
-  <testcase name="shouldPassToConfirmCannotRotateClockwiseFromFourthRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.008"/>
-  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFourthRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.022"/>
-  <testcase name="shouldPassToConfirmCannotRotateAntiClockwiseFromFirstRotationAtTopOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.013"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFirstRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.007"/>
-  <testcase name="shouldPassToConfirmCannotRotateAntiClockwiseFromThirdRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.013"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFirstRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.016"/>
-  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFirstRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.009"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFourthRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.021"/>
+  <testcase name="shouldPassToConfirmCannotRotateClockwiseFromThirdRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.016"/>
+  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromSecondRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.012"/>
+  <testcase name="shouldPassToConfirmCannotRotateClockwiseFromFirstRotationAtTopOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.014"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromSecondRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.021"/>
+  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromSecondRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.014"/>
+  <testcase name="shouldPassToConfirmCannotRotateAntiClockwiseFromSecondRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.009"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFirstRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.007"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromSecondRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.007"/>
+  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromThirdRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.006"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromThirdRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.016"/>
+  <testcase name="shouldPassToConfirmCannotRotateAntiClockwiseFromFourthRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.008"/>
+  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromThirdRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.008"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFourthRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.021"/>
+  <testcase name="shouldPassToConfirmCannotRotateClockwiseFromFourthRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.011"/>
+  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFourthRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.007"/>
+  <testcase name="shouldPassToConfirmCannotRotateAntiClockwiseFromFirstRotationAtTopOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.008"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFirstRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.009"/>
+  <testcase name="shouldPassToConfirmCannotRotateAntiClockwiseFromThirdRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.012"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFirstRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.02"/>
+  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFirstRotationInMiddleOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.006"/>
   <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromThirdRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.017"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromThirdRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.009"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromThirdRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.008"/>
   <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFirstRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.013"/>
-  <testcase name="shouldPassToConfirmCreatedCorrectly()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.014"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFirstRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.01"/>
+  <testcase name="shouldPassToConfirmCreatedCorrectly()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.011"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromFirstRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.008"/>
   <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromThirdRotationAtRightOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.007"/>
-  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFirstRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.005"/>
-  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromSecondRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.004"/>
+  <testcase name="shouldPassToConfirmRotatesClockwiseCorrectlyFromFirstRotationAtBottomOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.006"/>
+  <testcase name="shouldPassToConfirmRotatesAntiClockwiseCorrectlyFromSecondRotationAtLeftOfGrid()" classname="tetris.game.tetronimos.fourrotationstetronimo.LTetronimoTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
